@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Todo app</title>
+  </head>
+
+  <body>
+    <div class="image-container">
+      <img src="./images/bg-desktop-light.jpg" alt="light-bg" />
+    </div>
+
+    <main class="todo-container">
+      <header>
+        <h1>TODO</h1>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
+          <img src="./images/icon-moon.svg" alt="dark mode" id="theme-icon" />
+        </button>
+      </header>
+      <div class="input-div">
+        <label class="checkbox-container">
+          <input type="checkbox" class="todo-checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <input
+          type="text"
+          class="todo-input"
+          placeholder="Create a new todo..."
+        />
+      </div>
+      <section id="tasks-div" class="tasks-div"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- Todo
+
+    Add dynamic number
+    items left All Active Completed Clear Completed Drag and drop to reorder
+    list
+
+     <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
